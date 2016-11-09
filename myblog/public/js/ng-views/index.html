@@ -1,0 +1,12 @@
+<h2>All Blogs</h2>
+<h2>{{vm.blogs.length}} Blogs</h2>
+
+<div class="blogs">
+<h3 data-ng-repeat="blog in vm.blogs">
+<a data-ui-sref="show">{{blog.title}} for Blog in {{blog.content}}</a>
+</h3>
+</div>
+
+<form action="/blogs" method="post">
+  <input type="text" name="blog[title]" placeholder="Title">
+</form>

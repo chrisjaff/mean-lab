@@ -1,0 +1,15 @@
+<!-- {{#unless blog}} -->
+<!-- <h2>lol</h2> -->
+<!-- {{else}} -->
+<h2>{{blog.title}}</h2>
+<form method="post" action="/blogs/{{blog.title}}/delete">
+  <button type="submit">BOOM</button>
+</form>
+
+<form action="/blogs/{{blog.title}}" method="post">
+  <input type="text" name="blog[title]" Placeholder="Title" value="{{blog.title}}">
+  <input type="text" name="blog[content]" Placeholder="Content" value="{{blog.content}}">
+  <input type="text" name="blog[location]" Placeholder="Location" value="{{blog.location}}">
+  <button type="submit">CHANGE</button>
+</form>
+<!-- {{/unless}} -->

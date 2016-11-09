@@ -1,0 +1,12 @@
+<h2>What's your thoughts tommorow</h2>
+{{#each blogs as |blog index|}}
+<a href="/blogs/{{blog.title}}">{{blog.title}}</a>
+{{/each}}
+
+<h3>What's on your mind?</h3>
+<form action="/blogs" method="post">
+  <input type="text" title="blog[title]" placeholder="Title">
+  <input type="text" title="blog[content]" placeholder="Content">
+  <input type="text" title="blog[location]" placeholder="Location">
+  <button type="submit">PUSH</button>
+</form>
